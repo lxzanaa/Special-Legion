@@ -5,8 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Спецлегион</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
+<style>
+    .main-slider {
+        padding-top: 50px;
+    }
+
+    .swiper-pagination {
+        margin: 30px auto 0;
+        max-width: 394px;
+        display: flex;
+        justify-content: space-between;
+        position: static !important;
+    }
+
+    .swiper-pagination span {
+        width: 10px;
+        height: 10px;
+        opacity: 1;
+        background-color: rgba(102, 102, 102, 1);
+    }
+
+    .swiper-pagination span.swiper-pagination-bullet-active {
+        background-color: #F2722C;
+    }
+</style>
 
 <body>
 
@@ -339,9 +364,9 @@
                 <img class="hero__right" src="./img/hero/hero.png" alt="">
                 <img class="hero__right-mobile" src="./img/hero/hero.png" alt="">
             </div>
-            <div class="hero_price-mobile" >
-                <h3 class="hero_price-mobile-title" >от 5000₽</h3>
-                <div class="hero_price__btns" >
+            <div class="hero_price-mobile">
+                <h3 class="hero_price-mobile-title">от 5000₽</h3>
+                <div class="hero_price__btns">
                     <a class="hero__left_bottom-btn-catalog" href="#">Перейти в каталог</a>
                     <a class="hero__left_bottom-btn" href="#">
                         <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -363,7 +388,106 @@
     </section>
     <!-- Hero end  -->
 
+    <!-- slider start -->
+    <section class="top_slider">
+        <div class="top_slider-container container">
+            <div class="main-slider__wrapper swiper">
+                <div class="slider main-slider swiper-wrapper">
+                    <div class="capsule-slide swiper-slide">
+                        <img src="./img/slider/image.png" alt="img">
+                        <p>Костюм зимний Фаворит-1 (тк.Смесовая,210) брюки, т.серый/св.серый</p>
+                        <a href="#" class="btn-icon">
+                            <svg width="28" height="27" viewBox="0 0 28 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14 0.208771L11.6667 2.5421L21 11.8754H0.666687V15.2088H21L11.6667 24.5421L14 26.8754L27.3334 13.5421L14 0.208771Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="capsule-slide swiper-slide">
+                        <img src="./img/slider/helmet.png" alt="img">
+                        <p>Лучшие цены
+                            на средства индивидуальной защиты</p>
+                        <a href="#" class="btn-icon">
+                            <svg width="28" height="27" viewBox="0 0 28 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14 0.208771L11.6667 2.5421L21 11.8754H0.666687V15.2088H21L11.6667 24.5421L14 26.8754L27.3334 13.5421L14 0.208771Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="capsule-slide swiper-slide">
+                        <img src="./img/slider/man.png" alt="img">
+                        <p>Мужской бомбер</p>
+                        <a href="#" class="btn-icon">
+                            <svg width="28" height="27" viewBox="0 0 28 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14 0.208771L11.6667 2.5421L21 11.8754H0.666687V15.2088H21L11.6667 24.5421L14 26.8754L27.3334 13.5421L14 0.208771Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="capsule-slide swiper-slide">
+                        <img src="./img/slider/image.png" alt="img">
+                        <p>Костюм зимний Фаворит-1 (тк.Смесовая,210) брюки, т.серый/св.серый</p>
+                        <a href="#" class="btn-icon">
+                            <svg width="28" height="27" viewBox="0 0 28 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14 0.208771L11.6667 2.5421L21 11.8754H0.666687V15.2088H21L11.6667 24.5421L14 26.8754L27.3334 13.5421L14 0.208771Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="capsule-slide swiper-slide">
+                        <img src="./img/slider/helmet.png" alt="img">
+                        <p>Лучшие цены
+                            на средства индивидуальной защиты</p>
+                        <a href="#" class="btn-icon">
+                            <svg width="28" height="27" viewBox="0 0 28 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14 0.208771L11.6667 2.5421L21 11.8754H0.666687V15.2088H21L11.6667 24.5421L14 26.8754L27.3334 13.5421L14 0.208771Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="main-slider-pagination swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- slider end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
+    <script>
+        var swiper = new Swiper(".main-slider__wrapper", {
+            pagination: {
+                el: ".main-slider-pagination",
+            },
+            slidesPerView: "auto",
+            centeredSlides: false,
+            loop: true,
+            spaceBetween: 40,
+            breakpoints: {
+                1024: {
+                    slidesPerView: 3, 
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                320: {
+                    slidesPerView: 1,
+                }
+            }
+        });
+
+    </script>
 </body>
 
 </html>
