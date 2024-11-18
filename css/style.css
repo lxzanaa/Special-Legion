@@ -672,12 +672,14 @@ body {
         width: 36px;
         height: 36px;
     }
-    .capsule-slide .btn-icon{
+
+    .capsule-slide .btn-icon {
         width: 25px !important;
         height: 25px !important;
         right: 0 !important;
     }
-    .capsule-slide .btn-icon svg{
+
+    .capsule-slide .btn-icon svg {
         width: 15px;
     }
 }
@@ -753,3 +755,96 @@ body {
 }
 
 /* slider end  */
+
+
+/* category card start  */
+
+.category_card {
+    padding-top: 90px;
+    padding-bottom: 60px;
+}
+
+.category_card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.category_card_card-ac {
+    padding: 24px 12px;
+    border: 1px solid #E5E8ED;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    display: flex;
+    gap: 12px;
+    position: relative;
+}
+
+.category_card_card-ac:hover {
+    box-shadow: 0px 4px 4px -4px #1E212C08,
+        0px 12px 10px -6px #9A9CA50A,
+        0px 30px 24px -10px #9A9CA50D,
+        0px 80px 80px -20px #9A9CA514;
+}
+
+.category_card_card-logo{
+    color: #264065;
+    transition: all .2s ease;
+}
+
+.category_card_card-ac:hover .category_card_card-logo{
+    color: #307FDD;
+}
+
+.category_card-title {
+    color: #333333;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.category_card-type_btnContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.category_card-type_btn {
+    padding: 8px;
+    color: #666666;
+    font-size: 12px;
+    background-color: #F9F9F9;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.category_card-type_btn.active {
+    background-color: #307FDD !important;
+    color: white !important;
+}
+
+.category_explore-btn {
+    position: absolute;
+    background: #307FDD;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 15px 23px 0px #26406540;
+    border-radius: 9999px;
+    right: 0;
+    bottom: -25px;
+    transform: scale(0.8);
+    transition: all .2s ease;
+    opacity: 0;
+}
+.category_card_card-ac:hover .category_explore-btn{
+    transform: scale(1);
+    opacity: 1;
+}
+/* category card end*/
