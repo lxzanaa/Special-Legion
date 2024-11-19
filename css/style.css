@@ -1519,7 +1519,7 @@ body {
     background-color: transparent;
 }
 
-.review__btns-mobile{
+.review__btns-mobile {
     display: none !important;
 }
 
@@ -1528,7 +1528,7 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
-    }    
+    }
 }
 
 @media (max-width: 900px) {
@@ -1537,19 +1537,104 @@ body {
         grid-template-columns: 1fr;
         gap: 24px;
         margin-bottom: 12px;
-    }   
-    .review__container{
+    }
+
+    .review__container {
         padding: 15px;
-    } 
-    .review__title-main{
+    }
+
+    .review__title-main {
         font-size: 24px;
     }
-    .review__btns{
+
+    .review__btns {
         display: none;
     }
-    .review__btns-mobile{
+
+    .review__btns-mobile {
         display: flex !important;
     }
 }
 
 /* review start  */
+
+
+/* coming soon start  */
+
+.coming_soon {
+    padding: 90px 0;
+}
+
+.coming_soon-container {
+    padding: 60px;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid #E5E8ED;
+}
+
+.coming_soon_title {
+    color: #264065;
+    font-family: 'DaysFont';
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 44.1px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.coming_soon_cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.coming_soon_card-big {
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    border: 1px solid #F9F9F9;
+    padding: 24px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.coming_soon-card-heading {
+    color: #666666;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.coming_soon-card-heading-text {
+    color: #264065;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.9px;
+    letter-spacing: 0.05em;
+    margin-bottom: 18px;
+}
+
+.coming_soon_card_title {
+    color: #264065;
+    font-family: 'DaysFont';
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 58.8px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.coming_soon_card_text {
+    color: #333333;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.coming_soon-right {
+    transform: translateX(-100px);
+}
+.coming_soon-right-img {
+}
+
+/* coming soon end  */
