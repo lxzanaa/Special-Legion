@@ -699,6 +699,10 @@ body {
 
 /* slider start  */
 
+.main-slider {
+    margin-bottom: 30px;
+}
+
 .capsule-slide {
     height: 132px;
     display: flex;
@@ -811,17 +815,20 @@ body {
     margin-bottom: 10px;
     font-weight: normal;
 }
-.category_card-title_mobile{
+
+.category_card-title_mobile {
     color: #333333;
     font-size: #333333;
     font-weight: normal;
     display: none;
 }
-.category_card_card-top-mobile{
+
+.category_card_card-top-mobile {
     display: flex;
     align-items: center;
     gap: 12px;
 }
+
 .category_card-type_btnContainer {
     display: flex;
     flex-wrap: wrap;
@@ -867,20 +874,231 @@ body {
 }
 
 @media (max-width: 768px) {
-    .category_card-title_mobile{
+    .category_card-title_mobile {
         display: block;
     }
-    .category_card-title{
+
+    .category_card-title {
         display: none;
     }
-    .category_card_card-ac{
+
+    .category_card_card-ac {
         display: flex;
         flex-direction: column;
     }
-    .category_card-container{
+
+    .category_card-container {
         display: grid;
         grid-template-columns: 1fr;
     }
 }
 
 /* category card end*/
+
+/* Best offers start */
+
+.best_offers {
+    padding-top: 60px;
+    padding-bottom: 90px;
+    text-align: center;
+}
+
+.slider.swiper-wrapper {
+    text-align: left;
+}
+
+.swiper_product {
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.swiper_product img {
+    margin-bottom: 10px;
+}
+
+.main_offer-top-active {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    left: 6px;
+}
+
+.swiper_product-pagination {
+    padding: 0 20px;
+}
+
+.main_offer-top-active_first {
+    color: white;
+    font-size: 12px;
+    padding: 6px 12px;
+    background-color: #00AD48;
+    border-radius: 5px;
+}
+
+.main_offer-top-active-rek {
+    color: white;
+    font-size: 12px;
+    padding: 6px 12px;
+    background-color: #307FDD;
+    border-radius: 5px;
+}
+
+.best__offers-title {
+    color: #264065;
+    font-size: 42px;
+    font-family: 'DaysFont';
+    margin-bottom: 42px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.main_offer-text-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.main_offer-texts-art {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.2px;
+    color: #333333;
+}
+
+.main_offer-texts-abo {
+    color: #00AD48;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.2px;
+    padding: 6px 12px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.main_offer-texts-level {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main_offer-texts-stars {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.main_offer-texts-rank {
+    color: #666666;
+    font-size: 14px;
+}
+
+.main_offer-texts-text {
+    color: #2A2F2F;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.6px;
+    margin-bottom: 8px;
+}
+
+.main_offer-texts-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main_offer-texts-prices {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+.main_offer-texts_main-price {
+    color: #264065;
+    font-size: #264065;
+    font-weight: 500;
+}
+
+.main_offer-texts_old_price {
+    color: #666666;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.main_offer-slide-slider {
+    max-width: 250px;
+    width: 100%;
+}
+
+.main_offer-texts_addCard {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.best_offers_btn {
+    color: #264065;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18.9px;
+    padding: 20px 30px;
+    border: 1px solid #264065;
+    border-radius: 9999px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.best_offers_btn:hover {
+    color: white;
+    background-color: #264065;
+}
+
+.best_offers_btn:active {
+    opacity: 0.8;
+}
+
+.best_offers-pagination.swiper-pagination {
+    margin-top: 60px;
+}
+
+@media (max-width: 900px) {
+    .best__offers-title {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .best_offers_btn {
+        display: none;
+    }
+}
+
+/* Best offers end  */
+
+/* Logos start  */
+
+.logos {
+    padding: 0 0 90px;
+}
+
+.logos_swiper-slider{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.logos_slide.swiper-slide,
+.logos_slide-img {
+    max-width: 171px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* Logos end  */

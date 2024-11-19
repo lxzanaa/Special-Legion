@@ -12,6 +12,7 @@ function toggleMenuOverlay () {
   }
 }
 
+
 menuButton.addEventListener('change', toggleMenuOverlay)
 
 menuOverlay.addEventListener('click', () => {
@@ -26,7 +27,6 @@ dropMenuButton.addEventListener('click', function (event) {
   dropMenuButton.classList.toggle('open')
   menu.classList.toggle('open')
 })
-
 document.addEventListener('click', function (event) {
   if (!menu.contains(event.target) && !dropMenuButton.contains(event.target)) {
     dropMenuButton.classList.remove('open')
@@ -54,13 +54,4 @@ document.addEventListener('click', function (event) {
 
     rotateButton.classList.remove('rotate-180')
   }
-})
-
-const category_buttons = document.querySelectorAll('.category_card-type_btn')
-
-category_buttons.forEach(button => {
-  button.addEventListener('click', () => {
-    category_buttons.forEach(btn => btn.classList.remove('active'))
-    button.classList.add('active')
-  })
 })
