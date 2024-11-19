@@ -1158,15 +1158,43 @@ body {
 .blog__cards-main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 900px) {
+    .blog__cards-main {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+    .blog_title{
+        font-size: 24px;
+    }
+    .blog_btn{
+        padding: 10px 15px;
+    }
+    .blog_container{
+        padding: 15px;
+    }
+}
+
+@media (max-width: 1054px) {
+    .blog__cards-main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .blog__card {
     max-width: 392px;
+    width: 100%;
     border-radius: 15px;
     overflow: hidden;
     position: relative;
+    margin: 0 auto;
 }
-.blog__card:hover .blog__img-div{
+
+.blog__card:hover .blog__img-div {
     max-height: 439px;
     height: 100%;
 }
@@ -1180,19 +1208,28 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0; /* Default holatda yashirin */
-    transition: opacity 0.3s ease-out; /* Silliq o'tish */
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
     z-index: 2;
 }
 
 .blog__card:hover .blog__card_overlay {
-    opacity: 1; /* Hover holatda overlay ko'rinadi */
+    opacity: 1;
 }
 
 
-.blog__card:hover .blog__texts{
+.blog__card:hover .blog__texts {
     background-color: transparent;
     transform: translateY(-430px);
+    color: white;
+}
+
+.blog__card:hover .blog__texts .blog_heading-text,
+.blog__card:hover .blog__texts .blog_heading-time,
+.blog__card:hover .blog__texts .blog_card_title,
+.blog__card:hover .blog__texts .blog_card_text,
+.blog__card:hover .blog__texts .blog_card_button {
+    color: white;
 }
 
 .blog__img-div {
@@ -1211,6 +1248,7 @@ body {
     transition: all .3s ease-out;
     position: absolute;
     max-width: 392px;
+    z-index: 3;
 }
 
 .blog_heading-text {
