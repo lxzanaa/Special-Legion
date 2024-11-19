@@ -1167,13 +1167,16 @@ body {
         grid-template-columns: 1fr !important;
         gap: 20px;
     }
-    .blog_title{
+
+    .blog_title {
         font-size: 24px;
     }
-    .blog_btn{
+
+    .blog_btn {
         padding: 10px 15px;
     }
-    .blog_container{
+
+    .blog_container {
         padding: 15px;
     }
 }
@@ -1293,3 +1296,103 @@ body {
 }
 
 /* blog end  */
+
+/* about company start  */
+
+.company {
+    padding-bottom: 90px;
+}
+
+.company__container {
+    background-color: #307FDD;
+    padding: 60px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+.company__left{
+    max-width: 600px;
+    width: 100%;
+}
+.company__title {
+    color: white;
+    font-family: 'DaysFont';
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 44.1px;
+    margin-bottom: 42px;
+    text-transform: uppercase;
+}
+
+.company__text {
+    color: white;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 42px;
+}
+
+.company__time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.company__time_elements {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.6px;
+    margin-bottom: 42px;
+}
+
+.company__bottom-btn-but {
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12.6px;
+    padding: 12px 30px;
+    border: 1px solid #FFFFFF;
+    border-radius: 9999px;
+    text-decoration: none;
+}
+
+
+.company__right,
+.company__right img{
+    max-width: 600px;
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .company__time_elements{
+        font-size: 14px !important;
+    }
+    .company__text{
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .company__title{
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .company__right img {
+        max-width: 500px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+   .company__container{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 15px;
+   }
+}
+
+/* about company end */
