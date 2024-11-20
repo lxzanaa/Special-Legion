@@ -1634,7 +1634,80 @@ body {
 .coming_soon-right {
     transform: translateX(-100px);
 }
-.coming_soon-right-img {
+
+.coming_soon-main-img,
+.coming_soon_first-mini {
+    max-width: 288px;
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+}
+
+.coming_soon-main-img img {
+    max-width: 288px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.coming_soon_mini-texts {
+    position: absolute;
+    bottom: 50px;
+    left: 24px;
+    right: 24px;
+}
+
+.coming__soon-mini_heading {
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12.6px;
+}
+
+.coming__soon-mini_heading.margin-bottom {
+    margin-bottom: 10px;
+}
+
+.coming__soon-mini_title {
+    font-family: 'DaysFont';
+    text-transform: uppercase;
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 25.2px;
+}
+.coming_soon_cards-mini{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+@media (max-width: 1277px) {
+    .coming_soon_cards {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .coming_soon_title{
+        text-align: center;
+    }
+}
+
+@media (max-width: 900px) {
+    .coming_soon-container{
+        padding: 15px;
+    }
+    .coming__soon-mini_title{
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .coming__soon-mini_heading{
+        font-size: 10px;
+    }
+    .coming_soon_card_title{
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 8px;
+        max-width: 157px ;
+    }
 }
 
 /* coming soon end  */
