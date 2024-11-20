@@ -2758,7 +2758,6 @@
     <!-- Seasonal offers end  -->
 
     <!-- Coming soon start  -->
-
     <section class="coming_soon">
         <div class="coming_soon-container container">
             <h2 class="coming_soon_title">Скоро в продаже</h2>
@@ -2774,34 +2773,85 @@
                         <img class="coming_soon-right-img" src="./img/coming-soon/1.png" alt="product">
                     </div>
                 </div>
-                <div class="coming_soon_cards-mini" >
-                    <div class="coming_soon_first-mini" >
-                        <div class="coming_soon-main-img" >
+                <div class="coming_soon_cards-mini">
+                    <div class="coming_soon_first-mini">
+                        <div class="coming_soon-main-img">
                             <img src="./img/media-bg-cover.png" alt="man">
                         </div>
-                        <div class="coming_soon_mini-texts" >
-                            <p class="coming__soon-mini_heading" >Зимняя спецодежда</p>
-                            <p class="coming__soon-mini_heading margin-bottom" >Арт. 06956</p>
-                            <h3 class="coming__soon-mini_title" >Брюки СИРИУС-СПЕЦМОНТАЖ</h3>
+                        <div class="coming_soon_mini-texts">
+                            <p class="coming__soon-mini_heading">Зимняя спецодежда</p>
+                            <p class="coming__soon-mini_heading margin-bottom">Арт. 06956</p>
+                            <h3 class="coming__soon-mini_title">Брюки СИРИУС-СПЕЦМОНТАЖ</h3>
                         </div>
                     </div>
 
-                    <div class="coming_soon_first-mini" >
-                        <div class="coming_soon-main-img" >
+                    <div class="coming_soon_first-mini">
+                        <div class="coming_soon-main-img">
                             <img src="./img/media-bg-cover.png" alt="man">
                         </div>
-                        <div class="coming_soon_mini-texts" >
-                            <p class="coming__soon-mini_heading" >Зимняя спецодежда</p>
-                            <p class="coming__soon-mini_heading margin-bottom" >Арт. 06956</p>
-                            <h3 class="coming__soon-mini_title" >Брюки СИРИУС-СПЕЦМОНТАЖ</h3>
+                        <div class="coming_soon_mini-texts">
+                            <p class="coming__soon-mini_heading">Зимняя спецодежда</p>
+                            <p class="coming__soon-mini_heading margin-bottom">Арт. 06956</p>
+                            <h3 class="coming__soon-mini_title">Брюки СИРИУС-СПЕЦМОНТАЖ</h3>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Coming soon end  -->
+
+    <!-- mini blogs start  -->
+
+    <section class="mini_blog">
+        <div class="mini_blog-container swiper container">
+            <div class="swiper-wrapper">
+                <div class="mini_blog-card swiper-slide">
+                    <div class="mini_blog-card-texts">
+                        <h4 class="mini_blog-title">Пошив спецодежды на заказ</h4>
+                        <a href="#" class="mini-blog-switch__button">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14 0.956543L11.6667 3.28988L21 12.6232H0.666656V15.9565H21L11.6667 25.2899L14 27.6232L27.3333 14.2899L14 0.956543Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mini_blog-card swiper-slide">
+                    <div class="mini_blog-card-texts">
+                        <h4 class="mini_blog-title">Пошив спецодежды на заказ</h4>
+                        <a href="#" class="mini-blog-switch__button">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14 0.956543L11.6667 3.28988L21 12.6232H0.666656V15.9565H21L11.6667 25.2899L14 27.6232L27.3333 14.2899L14 0.956543Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mini_blog-card swiper-slide">
+                    <div class="mini_blog-card-texts">
+                        <h4 class="mini_blog-title">Пошив спецодежды на заказ</h4>
+                        <a href="#" class="mini-blog-switch__button">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14 0.956543L11.6667 3.28988L21 12.6232H0.666656V15.9565H21L11.6667 25.2899L14 27.6232L27.3333 14.2899L14 0.956543Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- mini blogs end  -->
 
 
 
@@ -2845,6 +2895,24 @@
         var swiper = new Swiper(".logos_swiper", {
             slidesPerView: 7,
             slidesPerView: "auto",
+        });
+        var swiper = new Swiper(".mini_blog-container", {
+            slidesPerView: 1.3,
+            slidesPerView: "auto",
+            spaceBetween: 10,
+            breakpoints: {
+                1024: {
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 2,
+                    centeredSlides: false,
+                },
+                320: {
+                    slidesPerView: 1,
+                    centeredSlides: true,
+                }
+            }
         });
     </script>
 </body>
