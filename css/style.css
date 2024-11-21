@@ -1884,6 +1884,9 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 40px;
+}
+
+.footer__container-links-main {
     padding-bottom: 32px;
     border-bottom: 1px solid #FFFFFF14;
     margin-bottom: 32px;
@@ -1931,6 +1934,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+.footer__adress-list-mobile{
+    display: none;
 }
 
 .footer__adress-heading {
@@ -2008,6 +2015,21 @@ body {
     .footer__container-top-title {
         font-size: 20px;
         text-align: left;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer__adress-list {
+        display: none;
+    }
+
+    .footer__adress-list-mobile {
+        display: block;
+        text-align: center;
+        max-width: 300px;
+        margin: 0 auto;
+        list-style: none;
+        margin-top: 32px;
     }
 }
 
