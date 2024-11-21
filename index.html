@@ -986,6 +986,8 @@
             <div class="main_offer-slide swiper">
                 <div class="slider swiper-wrapper" style="display: flex; gap: 10px; margin-bottom: 24px;">
                     <div class="main_offer-slide-slider swiper-slide">
+
+
                         <div class="swiper swiper_product">
                             <div class="main_offer-top-active">
                                 <div class="main_offer-top-active_first">Хит</div>
@@ -1010,6 +1012,10 @@
                             </div>
                             <div class="swiper_product-pagination swiper-pagination"></div>
                         </div>
+
+
+
+
                         <div class="main_offer-texts">
                             <div class="main_offer-text-top">
                                 <p class="main_offer-texts-art">Арт. 1234567</p>
@@ -1479,7 +1485,7 @@
             <div>
                 <button class="best_offers_btn">Загрузить еще</button>
             </div>
-            <div class="best_offers-pagination swiper-pagination"></div>
+            <div class="swiper-pagination best_offers-pagination"></div>
         </div>
     </section>
 
@@ -2923,7 +2929,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer_texts" >
+            <div class="footer_texts">
                 <p class="footer_text">2010-2024 ©Спецлегион Цены,</p>
                 <p class="footer_text">указанные на сайте, не являются публичной офертой.</p>
             </div>
@@ -2954,6 +2960,7 @@
                 },
                 320: {
                     slidesPerView: 1,
+                    spaceBetween: 20,
                 }
             }
         });
@@ -2963,14 +2970,28 @@
                 el: ".swiper_product-pagination",
             },
             slidesPerView: "auto",
-            centeredSlides: false,
         });
         var swiper = new Swiper(".main_offer-slide", {
             pagination: {
                 el: ".best_offers-pagination",
             },
             slidesPerView: "auto",
+            breakpoints: {
+                1024: {
+                    centeredSlides: false,
+                },
+                768: {
+                    slidesPerView: "auto",
+                    centeredSlides: false,
+                },
+                320: {
+                    slidesPerView: "auto",
+                    centeredSlides: true,
+                    loop: true,
+                }
+            }
         });
+
         var swiper = new Swiper(".logos_swiper", {
             slidesPerView: 7,
             slidesPerView: "auto",

@@ -544,7 +544,8 @@ body {
 }
 
 .hero__left_bottom-btn-catalog {
-    padding: 20px 30px;
+    padding: 20px 35px;
+    font-size: 18px;
     color: white;
     background-color: #F2722C;
     text-decoration: none;
@@ -1954,15 +1955,18 @@ body {
         flex-direction: column;
         gap: 10px;
     }
-    .footer__container-form{
+
+    .footer__container-form {
         max-width: 100%;
         width: 100%;
     }
-    .footer__container-top{
+
+    .footer__container-top {
         padding: 30px 15px;
 
     }
-    .footer__container-inp{
+
+    .footer__container-inp {
         width: 100%;
     }
 }
