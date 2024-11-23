@@ -2227,9 +2227,7 @@ body {
     right: 10px;
 }
 
-/* ---- Responsive Styles ---- */
 
-/* Mobile and small tablets (max-width: 767px) */
 @media (max-width: 767px) {
     .product-list__container {
         max-width: 100%;
@@ -2238,21 +2236,17 @@ body {
 
     .product-list__item {
         display: block;
-        /* Remove flexbox, stack items vertically */
         padding: 15px 10px;
         margin-bottom: 20px;
-        /* Add margin between items */
     }
 
     .product-list__title {
         font-size: 20px;
-        /* Smaller font size for title */
         line-height: 24px;
     }
 
     .product-list__description {
         font-size: 16px;
-        /* Smaller font size for description */
         line-height: 22px;
     }
 
@@ -2263,11 +2257,9 @@ body {
     .product-list-btn-left,
     .product-list-btn-right {
         display: none;
-        /* Hide buttons on small screens */
     }
 }
 
-/* Medium tablets and larger screens (768px to 1024px) */
 @media (max-width: 1024px) and (min-width: 768px) {
     .product-list__container {
         max-width: 100%;
@@ -2277,27 +2269,23 @@ body {
     .product-list__item {
         display: flex;
         flex-direction: column;
-        /* Stack elements vertically in a column */
         padding: 20px 20px;
         margin-bottom: 20px;
     }
 
     .product-list__title {
         font-size: 24px;
-        /* Smaller font size for title */
         line-height: 28px;
     }
 
     .product-list__description {
         font-size: 20px;
-        /* Smaller font size for description */
         line-height: 26px;
     }
 
     .product-list-btn-left,
     .product-list-btn-right {
         display: block;
-        /* Keep buttons on medium screens */
     }
 }
 
