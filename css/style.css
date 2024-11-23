@@ -2144,3 +2144,162 @@ body {
 
 /* catalog navigation end  */
 
+/* product list start  */
+
+
+/* Default styles */
+.product-list {
+    padding-bottom: 30px;
+}
+
+.product-list__container-main {
+    position: relative;
+    max-width: 1240px;
+    margin: auto;
+}
+
+.product-list__container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 1123px;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.product-list__items {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.product-list__item {
+    border: 1px solid #E5E8ED;
+    background-color: white;
+    padding: 20px 60px;
+    max-width: 1113px;
+    width: 100%;
+    margin: 0 10px;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.product-list__title {
+    font-family: "DaysFont";
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 37.8px;
+    color: #264065;
+    margin-bottom: 5px;
+}
+
+.product-list__description {
+    color: #333333;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32.4px;
+}
+
+.product-list__img {
+    max-width: 346px;
+    width: 100%;
+}
+
+.product-list-btn-left,
+.product-list-btn-right {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.product-list-btn-left {
+    left: 10px;
+}
+
+.product-list-btn-right {
+    right: 10px;
+}
+
+/* ---- Responsive Styles ---- */
+
+/* Mobile and small tablets (max-width: 767px) */
+@media (max-width: 767px) {
+    .product-list__container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .product-list__item {
+        display: block;
+        /* Remove flexbox, stack items vertically */
+        padding: 15px 10px;
+        margin-bottom: 20px;
+        /* Add margin between items */
+    }
+
+    .product-list__title {
+        font-size: 20px;
+        /* Smaller font size for title */
+        line-height: 24px;
+    }
+
+    .product-list__description {
+        font-size: 16px;
+        /* Smaller font size for description */
+        line-height: 22px;
+    }
+
+    .product-list__img {
+        margin: 0 auto;
+    }
+
+    .product-list-btn-left,
+    .product-list-btn-right {
+        display: none;
+        /* Hide buttons on small screens */
+    }
+}
+
+/* Medium tablets and larger screens (768px to 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .product-list__container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .product-list__item {
+        display: flex;
+        flex-direction: column;
+        /* Stack elements vertically in a column */
+        padding: 20px 20px;
+        margin-bottom: 20px;
+    }
+
+    .product-list__title {
+        font-size: 24px;
+        /* Smaller font size for title */
+        line-height: 28px;
+    }
+
+    .product-list__description {
+        font-size: 20px;
+        /* Smaller font size for description */
+        line-height: 26px;
+    }
+
+    .product-list-btn-left,
+    .product-list-btn-right {
+        display: block;
+        /* Keep buttons on medium screens */
+    }
+}
+
+
+/* product list end  */
