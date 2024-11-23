@@ -69,3 +69,55 @@ buttonContainers.forEach(container => {
     }
   })
 })
+
+const dropdownButton = document.getElementById('dropdownButton')
+const dropdownMenu = document.getElementById('dropdownMenu')
+
+dropdownButton.addEventListener('click', () => {
+  dropdownMenu.classList.toggle('show')
+})
+
+const dropdownItems = dropdownMenu.querySelectorAll('.dropdown-item')
+dropdownItems.forEach(item => {
+  item.addEventListener('click', () => {
+    dropdownButton.childNodes[0].textContent = item.textContent
+    dropdownMenu.classList.remove('show')
+  })
+})
+
+document.addEventListener('click', e => {
+  if (!dropdownButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
+    dropdownMenu.classList.remove('show')
+  }
+})
+
+document.querySelectorAll('.assortment__button').forEach(button => {
+  button.addEventListener('click', () => {
+    button.classList.toggle('open')
+  })
+})
+document
+  .querySelector('.inventory__button')
+  .addEventListener('click', function () {
+    this.classList.toggle('active')
+  })
+
+const button = document.querySelector('.product-filter__button')
+const list = document.querySelector('.product-filter__list')
+
+button.addEventListener('click', () => {
+  button.classList.toggle('active')
+})
+
+
+document.querySelectorAll('.product-filter__radio').forEach(radio => {
+  radio.addEventListener('change', function() {
+      document.querySelectorAll('.product-filter__radio').forEach(item => {
+          item.classList.remove('checked');
+      });
+      
+      if (radio.checked) {
+          radio.classList.add('checked');
+      }
+  });
+});
