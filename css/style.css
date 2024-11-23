@@ -2767,6 +2767,34 @@ body {
     border-radius: 5px;
 }
 
+
+.search-history {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.search-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #fff;
+    color: #666666;
+    font-size: 12px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 9999px;
+    padding: 6px 10px;
+}
+
+.icon-close {
+    display: flex;
+    cursor: pointer;
+}
+
 /* 
 .shop-filter_price {
     width: 100%;
